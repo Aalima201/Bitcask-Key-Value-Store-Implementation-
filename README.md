@@ -25,3 +25,41 @@ This implementation covers the basic features of the Bitcask key-value store, in
 - Fast boot-up process with hint files.
 - Automatic compaction to manage disk usage.
 
+## Installation
+1. Install Go if not already installed. Refer to [Go installation](https://golang.org/doc/install) for instructions.
+
+## Usage
+To use the database, run the `main.go` file and execute commands in the terminal:
+
+### PUT: Store a value
+```bash
+go run cmd/main.go <COMMAND> <KEY> <VALUE>
+```
+### PUT: Store a value that has an expiry time
+```bash
+go run cmd/main.go PUT hello world 10s
+```
+### GET: Retrieve a value
+```bash
+go run cmd/main.go GET key1
+```
+### DELETE: Remove a key
+```bash
+go run cmd/main.go DELETE key1
+```
+### LIST KEYS: List all keys
+```bash
+go run cmd/main.go LIST KEYS
+```
+### SYNC: Sync writes to disk
+```bash
+go run cmd/main.go SYNC
+```
+### CLOSE: Close the datastore
+```bash
+go run cmd/main.go CLOSE
+```
+### COMPACTION: Optimize data storage
+```bash
+go run cmd/main.go COMPACTION
+```
