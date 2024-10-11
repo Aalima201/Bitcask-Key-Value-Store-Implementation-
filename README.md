@@ -33,7 +33,7 @@ To use the database, run the `main.go` file and execute commands in the terminal
 
 ### PUT: Store a value
 ```bash
-go run cmd/main.go <COMMAND> <KEY> <VALUE>
+go run cmd/main.go PUT key1 value1
 ```
 ### PUT: Store a value that has an expiry time
 ```bash
