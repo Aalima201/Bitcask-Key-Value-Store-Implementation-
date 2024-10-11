@@ -14,7 +14,7 @@ This implementation covers the basic features of the Bitcask key-value store, in
 - **SYNC**: Force writes to sync to disk.
 - **CLOSE**: Close the datastore and flush pending writes.
 
-### Bonus Tasks
+### Additional features
 - **EXPIRY**: Set an expiry time when adding a key (e.g., `PUT hello world 10s` sets the key "hello" to expire in 10 seconds).
 - **Hint Files**: Create a hint file containing keys and metadata for faster boot times after a crash, facilitating the rebuilding of the KeyDir.
 - **Compaction**: Merge older data files into new ones containing only active keys, optimizing disk space and improving performance based on thresholds for file size and disk usage.
