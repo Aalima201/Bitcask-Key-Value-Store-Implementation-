@@ -25,8 +25,3 @@ This implementation covers the basic features of the Bitcask key-value store, in
 - Fast boot-up process with hint files.
 - Automatic compaction to manage disk usage.
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Aalima201/Bitcask-Key-Value-Store-Implementation-/
-   cd Bitcask-Key-Value-Store-Implementation-
